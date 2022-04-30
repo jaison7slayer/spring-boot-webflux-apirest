@@ -30,6 +30,12 @@ public class ProductoController {
 
 	@Autowired
 	private ProductoService service;
+	
+	/*SOLO POR PRUEBAS GITHUB CON ACTIONS*/
+	@GetMapping("/test")
+	public String listarTest() {
+		return "Hola, testeando Github Actions con Azure!";
+	}
 
 	// ESTA ES LA FORMA MAS SIMPLE Y FACIL
 	@GetMapping

@@ -33,7 +33,8 @@ public class SpringBootWebfluxApirestApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		mongoTemplate.dropCollection("productos").subscribe();
+		/*SE COMENTA POR PRUEBAS CON GITHUB CON ACTIONS*/
+		/*mongoTemplate.dropCollection("productos").subscribe();
 		mongoTemplate.dropCollection("categorias").subscribe();
 
 		Categoria inalambrico = new Categoria("Inalámbrico");
@@ -55,7 +56,7 @@ public class SpringBootWebfluxApirestApplication implements CommandLineRunner {
 				new Producto("Disco duro externo", 80.5, portatiles)).flatMap(producto -> {
 					producto.setCreateAt(new Date());
 					return service.save(producto);
-				})).subscribe(dato -> log.info("Insert into: " + dato.getId() + " " + dato.getNombre()));
+				})).subscribe(dato -> log.info("Insert into: " + dato.getId() + " " + dato.getNombre()));*/
 	}
 
 }

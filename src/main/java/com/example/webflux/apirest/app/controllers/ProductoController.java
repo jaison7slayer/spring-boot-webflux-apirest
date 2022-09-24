@@ -36,6 +36,12 @@ public class ProductoController {
 	public String listarTest() {
 		return "Hola, testeando Github Actions con Azure!";
 	}
+
+    /*PRUEBA PARA PROBAR HARD RESET*/
+    @GetMapping("/test2")
+    public String listarTest2() {
+        return "Hola, testeando Github Actions con Azure!";
+    }
 	
 	// ESTA ES LA FORMA MAS SIMPLE Y FACIL
 	/*	

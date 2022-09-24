@@ -43,8 +43,7 @@ public class ProductoController {
 	}
 
 	// ESTA ES LA FORMA MAS SIMPLE Y FACIL
-	@GetMapping
-	/*
+	/*@GetMapping	
 	 * public Flux<Producto> listar(){ return service.findAll(); }
 	 */
 	// ESTA ES LA FORMA CON MONO Y RESPONSEENTITY

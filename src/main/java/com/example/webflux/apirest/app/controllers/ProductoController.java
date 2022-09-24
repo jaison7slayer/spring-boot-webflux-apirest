@@ -37,11 +37,10 @@ public class ProductoController {
 		return "Hola, testeando Github Actions con Azure!";
 	}
 	
-	@GetMapping("/test2")
+	@GetMapping("/test3")
 	public String listarTest2() {
-		return "Hola, testeando para PR!";
+		return "Hola, testeando para PR prueba nueva!";
 	}
-
 
 	// ESTA ES LA FORMA MAS SIMPLE Y FACIL
 	@GetMapping

@@ -36,10 +36,14 @@ public class ProductoController {
 	public String listarTest() {
 		return "Hola, testeando Github Actions con Azure!";
 	}
+	
+	@GetMapping("/test3")
+	public String listarTest2() {
+		return "Hola, testeando para PR prueba nueva!";
+	}
 
 	// ESTA ES LA FORMA MAS SIMPLE Y FACIL
-	@GetMapping
-	/*
+	/*@GetMapping	
 	 * public Flux<Producto> listar(){ return service.findAll(); }
 	 */
 	// ESTA ES LA FORMA CON MONO Y RESPONSEENTITY

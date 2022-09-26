@@ -49,12 +49,16 @@ public class ProductoController {
 		return "Hola, testeando Github Actions con Azure PARA REVERT!";
 	}
 	
+	@GetMapping("/test3")
+	public String listarTest2() {
+		return "Hola, testeando para PR prueba nueva!";
+	}
+
 	// ESTA ES LA FORMA MAS SIMPLE Y FACIL
-	/*	
-	  public Flux<Producto> listar(){ return service.findAll(); }
+	/*@GetMapping	
+	 * public Flux<Producto> listar(){ return service.findAll(); }
 	 */
 	// ESTA ES LA FORMA CON MONO Y RESPONSEENTITY
-	@GetMapping
 	public Mono<ResponseEntity<Flux<Producto>>> listar() {
 		return Mono.just(ResponseEntity.ok().contentType(MediaType.APPLICATION_JSON) // APPLICATION_JSON_UTF8
 				.body(service.findAll()));
